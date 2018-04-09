@@ -1,0 +1,21 @@
+﻿@{
+    string type;
+    if (Session["type"] == null)
+    {
+        type = "agent";
+    }
+    else
+    {
+        type = Session["type"].ToString();
+    }
+
+    if(type == "admin")
+    {
+        Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_AgentLayout.cshtml";
+    }
+
+}

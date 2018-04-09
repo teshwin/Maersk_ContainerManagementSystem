@@ -1,0 +1,18 @@
+﻿@using CMSMaersk.Models;
+@{
+    var user = (Agent)Session["user"];
+
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+</head>
+<body>
+    <div>
+        <h1>Welcome @user.FirstName</h1>
+    </div>
+</body>
+</html>

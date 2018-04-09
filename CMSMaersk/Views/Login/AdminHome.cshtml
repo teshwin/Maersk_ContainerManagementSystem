@@ -1,0 +1,18 @@
+﻿@using CMSMaersk.Models;
+@{
+    var user = (Admin)Session["user"];
+
+}  
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Admin Home</title>
+</head>
+<body>
+    <div> 
+        <h1>Welcome @user.Username</h1>
+    </div>
+</body>
+</html>
